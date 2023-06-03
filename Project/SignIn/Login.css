@@ -224,7 +224,6 @@ video {
 .info-main .info-item .fa-solid:hover {
     transition: 0.2s;
     transform: scale(1);
-    text-shadow: 0 0px 1px blue;
 }
 .info-main .info-item {
     margin: 20px;

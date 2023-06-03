@@ -681,20 +681,20 @@ header.grid.wide {
     position: relative;
     cursor: pointer;
     transition: 0.3s;
-    animation: fadeIn 0.3s linear forwards;
-    animation-delay: var(--delay);
-    top: 50px;
-    opacity: 0;
+    // animation: fadeIn 0.3s linear forwards;
+    // animation-delay: var(--delay);
+    // top: 50px;
+    // opacity: 0;
 }
-@keyframes fadeIn {
-    from { 
-        opacity: 0; 
-    }
-    to {
-        top: 0;
-        opacity: 1; 
-    }
-}
+// @keyframes fadeIn {
+//     from { 
+//         opacity: 0; 
+//     }
+//     to {
+//         top: 0;
+//         opacity: 1; 
+//     }
+// }
 .car-container__box-item:hover {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
     z-index: 10;

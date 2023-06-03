@@ -141,7 +141,7 @@ function accountAdmin() {
                 body: JSON.stringify(account)
             })
                 .then(function () {
-                    btnLogin.setAttribute('href', 'file:///E:/C%C3%A0y_FrontEnd/%C4%90o_An_Khoi_Le/Project/Home/Home.html')
+                    btnLogin.setAttribute('href', 'file:///E:/C%C3%A0y_FrontEnd/CarShopManagementApp/Project/Home/Home.html')
                     btnLogin.click()
                 })
         } else {
