@@ -1,0 +1,49 @@
+@media screen and (max-width: 1239.99px) {
+    :root {
+        --header-margin-top-: 153px
+    }
+
+    .header__logo {
+        width: 260px;
+    }
+    .header__logo img {
+        height: 280px;
+    }
+
+    .header-main__search-box__search-main {
+        margin-left: 95px;
+    }
+    .header-main__search-box__input-search {
+        height: 27px;
+        width: 292px;
+        font-size: 21px;
+    }
+
+    .header-main__search-box i {
+        font-size: 20px;
+        line-height: 20px;
+        margin-right: 4px;
+    }
+    .header-main__search-box__avatar i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .header-main__search-box__text {
+        font-size: 17px;
+        width: 108px; 
+    }
+
+    .header-main__search-box__log-out {
+        font-size: 18px;
+    }
+
+    .header-main__search-box i {
+        margin-left: 3px;
+    }
+
+    .menu-container .item {
+        font-size: 20px;
+    }
+}
+

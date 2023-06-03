@@ -1,0 +1,413 @@
+:root {
+    --colorThemeMain-: rgba(31, 229, 31, 0.5);
+}
+
+.whiteTheme {
+    background-color: white;
+}
+.blackTheme {
+    background-color: black;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 2000px;
+    min-width: 500px;
+    height: 1000px;
+}
+
+video {
+    position: fixed;
+    /* width: 100%;
+    height: 100%; */
+    top: 0;
+    left: 0;
+    /* bottom: 0; */
+    /* right: 0; */
+    z-index: -1;
+}
+
+/* logo start*/
+.logo {
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: -174px;
+    left: -16px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+/* logo end*/
+
+.form {
+    width: 630px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 25px;
+    z-index: 9999;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+.form .form-item {
+    display: flex;
+    width: 88%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+}
+.form .form-item:not(:first-child) {
+    margin-top: 100px;
+}
+.form-item input {
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    padding-top: 20px;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form__form-item__eyeOpen {
+    position: absolute;
+    font-size: 35px;
+    right: 0px;
+    cursor: pointer;
+    height: 100%;
+    width: 50px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__form-item__eyeClose {
+    position: absolute;
+    font-size: 35px;
+    right: 0px;
+    cursor: pointer;
+    height: 100%;
+    width: 50px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item input:not(:placeholder-shown) ~ .placeholder,
+.form-item input:focus + .placeholder {
+    top: -15px;
+    left: 15px;
+    opacity: 1;
+    transition: 0.5s;
+    background-color: rgb(12, 164, 15);
+    padding: 3px 5px;
+    border-radius: 10px;
+    color: white;
+}
+.form-item input:focus {
+    border: 5px solid var(--colorThemeMain-);
+    margin-top: -2.5px;
+    padding: -2px 5px;
+    padding-top: 20px;
+    
+}
+.form-item .placeholder {
+    pointer-events: none;
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    opacity: 0.5;
+    text-transform: uppercase;
+    line-height: 30px;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.Forgot-Password {
+    color: white;
+    bottom: 120px;
+    right: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+.Forgot-Password:hover {
+    border-bottom: 2px solid white;
+}
+
+.buttonLogin {
+    z-index: 9999;
+    background-color: var(--colorThemeMain-);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    font-weight: bold;
+}
+.buttonLogin a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonLogin:hover {
+    background-color: rgba(31, 229, 31, 1);
+    cursor: pointer;
+    transition: 0.1s;
+}
+.buttonLogin:hover a {
+    color: black;
+    transition: 0.1s;
+}
+.buttonLogin:active {
+    background-color: var(--colorThemeMain-);
+}
+.buttonLogin:active a {
+    color: white;
+    transition: 0.1s;
+}
+
+.info-main {
+    position: absolute;
+    bottom: 0px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.info-main .info-item .fa-brands,
+.info-main .info-item .fa-solid {
+    font-size: 60px;
+    color: white;
+    transform: scale(0.7);
+    position: relative;
+}
+.info-main .info-item .before {
+    font-size: 60px;
+    width: 0%;
+    overflow: hidden;
+    transform: scale(1);
+    color: var(--color);
+    transform-origin: left;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.info-main .info-item .fa-brands:hover,
+.info-main .info-item .fa-solid:hover {
+    transition: 0.2s;
+    transform: scale(1);
+    text-shadow: 0 0px 1px blue;
+}
+.info-main .info-item {
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.info-main .info-item:nth-child(4) {
+    position: absolute;
+    top: 62px;
+}
+.info-main .info-item:nth-child(4) a {
+    display: flex;
+    align-items: center;
+}
+.info-main .info-item:nth-child(4) .text {
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.info-main .info-item:nth-child(5) {
+    position: absolute;
+    bottom: 0px;
+    border-radius: 500px;
+    width: 660px;
+    height: 50px; 
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(19, 146, 19) 50%, transparent 50%);
+    background-size: 200%;
+    background-position: 100%;
+    transition: 1s;
+}
+
+.info-main__info-item__background-i {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: rgb(19, 146, 19);
+    border-radius: 50%;
+    left: 25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    user-select: none;
+    pointer-events: none;
+}
+.info-main .info-item:nth-child(5) i {
+    position: absolute;
+    font-size: 40px;
+    left: 9px;
+    top: 10%;
+    transform: translate(0%, -50%);
+    transform: scale(0.7);
+    transition: 0.2s;
+    user-select: none;
+    pointer-events: none;
+}
+.info-main .info-item:nth-child(5) i:hover {
+    transform: scale(1);
+}
+
+.info-main .info-item:nth-child(5) p {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font-size: 22px;
+    color: white;
+    pointer-events: none;
+}
+
+.tabForgotPassword {
+    position: fixed;
+    width: 500px;
+    height: 230px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+    z-index: 999999;
+    transition: 0.5s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    opacity: 0;
+}
+.tabForgotPassword.active {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+    opacity: 1;
+    pointer-events: all;
+    opacity: 1;
+}
+.tabForgotPassword .form {
+    position: relative;
+    background-color: unset;
+    width: 100%;
+    height: 100%;
+}
+.tabForgotPassword .form .form-item {
+    font-size: 20px;
+    top: -20px;
+}
+.tabForgotPassword .form .buttonLogin {
+    background-color: rgba(31, 229, 31, 1);
+    bottom: 30px;
+    width: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabForgotPassword .form .buttonLogin:hover {
+    background-color: var(--colorThemeMain-);
+    color: black;
+}
+.tabForgotPassword .form .buttonLogin:active {
+    background-color: rgba(31, 229, 31, 1);
+    color: white;
+}
+.tabForgotPassword .text {
+    font-size: 23px;
+    width: 88%;
+    position: absolute;
+    top: 30px;
+}
+
+.blur {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999998;
+    pointer-events: none;
+}
+.blur.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s ease;
+}
+
+.getNewPassword {
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+    z-index: 999999;
+    transition: 0.5s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    opacity: 0;
+}
+.getNewPassword .form {
+    background-color: unset;
+    width: 100%;
+    height: 100%;
+}
+.getNewPassword.active {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.getNewPassword .buttonLogin {
+    background-color: rgba(31, 229, 31, 1);
+    bottom: 30px;
+    width: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getNewPassword .form .buttonLogin:hover {
+    background-color: var(--colorThemeMain-);
+    color: black;
+}
+.getNewPassword .form .buttonLogin:active {
+    background-color: rgba(31, 229, 31, 1);
+    color: white;
+}

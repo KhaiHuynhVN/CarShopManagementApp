@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta item="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./Home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="./HomeGridd.css">
+    <link rel="stylesheet" href="./HomeResponsive.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="body grid wide">
+        <header class="grid wide">
+            <div class="header-main">
+                <div class="header__logo"><img src="../Img/logo.png" alt=""></div>
+                <div class="header-main__search-box">
+                    <div class="header-main__search-box__search-main">
+                        <input type="text" class="header-main__search-box__input-search" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <div class="header-main__search-box__account">
+                        <div class="header-main__search-box__avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="header-main__search-box__text">Hello Khoi Le</div>
+                        <div class="header-main__search-box__log-out">Log out</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-main grid wide">
+            <div class="menu-container">
+                <div class="item active">
+                    <div class="text">All</div>
+                </div>
+                <div class="item">
+                    <div class="text">Honda</div>
+                </div>
+                <div class="item">
+                    <div class="text">Mercedes</div>
+                </div>
+                <div class="item">
+                    <div class="text">Toyota</div>
+                </div>
+                <div class="item">
+                    <div class="text">Khác</div>
+                </div>
+            </div>
+            <div class="menu-container__line"></div>
+        </div>
+
+        <div class="car-container">
+            <div class="car-container__box">
+                <!-- loading start -->
+                <div class="wrapper">
+                    <div class="box-wrap">
+                        <div class="box one"></div>
+                        <div class="box two"></div>
+                        <div class="box three"></div>
+                        <div class="box four"></div>
+                        <div class="box five"></div>
+                        <div class="box six"></div>
+                    </div>
+                </div>
+                <!-- loading end -->
+            </div>
+        </div>
+
+        <div class="btn-add-container grid wide">
+            <div class="btn-add">Thêm xe</div>
+        </div>
+
+        <div class="form-add-car">
+            <div class="form-add-car__img">
+                <img>
+                <div class="form-add-car__img__plus"><i class="fa-solid fa-plus"></i></div>
+                <input class="form-add-car__img__file" type="file" hidden>
+            </div>
+
+            <div class="form-add-car__decribe">
+                <label for="textarea" class="text">Mô tả:</label>
+                <textarea placeholder="Chưa có thông tin..." id="textarea"></textarea>
+            </div>
+
+            <div class="form-add-car__info">
+                <div class="item">
+                    <label for="text" class="text">Tên xe:</label>
+                    <input id="text" type="text">
+                </div>
+                <div class="item">
+                    <label for="text1" class="text">Ngày sản xuất:</label>
+                    <input id="text1" type="text">
+                </div>
+                <div class="item">
+                    <label for="text2" class="text">Nơi sản xuất:</label>
+                    <input id="text2" type="text">
+                </div>
+                <div class="item">
+                    <label for="text3" class="text">Ngày nhập hàng:</label>
+                    <input id="text3" type="text">
+                </div>
+                <div class="item">
+                    <label for="text4" class="text">Giá:</label>
+                    <input id="text4" type="text">
+                </div>
+                <div class="item">
+                    <label for="text5" class="text">Số lượng còn:</label>
+                    <input id="text5" type="text">
+                </div>
+            </div>
+
+            <div class="form-add-car__info__btn-cancel">Cancel</div>
+            <div class="form-add-car__info__btn-save">Save</div>
+            <div class="form-add-car__info__btn-ok">Ok</div>
+        </div>
+
+        <div class="tab-Logout">
+            <div class="tab-Logout__text">Bạn có chắc muốn đăng xuất?</div>
+            <div class="tab-Logout__button-main">
+                <div class="tab-Logout__button-ok"><a
+                        href="file:///E:/C%C3%A0y%20html%20css/%C4%90o_An_Khoi_Le/Project/SignIn/Login.html">Ok</a>
+                </div>
+                <div class="tab-Logout__button-cancel">Cancel</div>
+            </div>
+        </div>
+        <div class="tab-Logout__blur"></div>
+
+        <footer>
+            <div class="footer-icon">
+                <a href="https://www.facebook.com/profile.php?id=100010114870297"><i style="--color: blue"
+                        class="fa-brands fa-facebook before"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100010114870297"><i style="--color: orange"
+                        class="fa-brands fa-instagram before"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100010114870297"><i style="--color: blue"
+                        class="fa-brands fa-twitter before"></i></a>
+            </div>
+
+            <div class="footer-info">
+                <p><i class="fa-solid fa-location-dot"></i>27 Tran Phu Street, Ward 4, District 5, Ho Chi Minh City,
+                    VietNam</p>
+                <p><i class="fa-solid fa-mobile-screen-button before"></i>0123456789</p>
+                <p><img src="../Img/gmail.png">dangkhoi712000@gmail.com</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./Home.js"></script>
+
+</html>

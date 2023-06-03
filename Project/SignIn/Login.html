@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./Login.css">
+    <link rel="stylesheet" href="./LoginResponsive.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <video loop muted autoplay>
+        <source src="../Img/carBackground.mp4" type="video/mp4">
+    </video>
+    <div class="logo"><img src="../Img/logo.png" alt=""></div>
+
+    <div class="form">
+        <div class="form-item">
+            <input class="Account" type="text" placeholder=" ">
+            <div class="placeholder">Your ID</div>
+        </div>
+        <div class="form-item">
+            <input class="Password form__form-item__password" type="password" placeholder=" ">
+            <div class="placeholder">Your Password</div>
+            <i style="display: none" class="fa-solid fa-eye form__form-item__eyeOpen"></i>
+            <i class="fa-solid fa-eye-slash form__form-item__eyeClose"></i>
+        </div>
+
+        <div class="Forgot-Password">Forgot password?</div>
+
+        <div class="buttonLogin"><a>Log In</a></div>
+    </div>
+
+    <div class="info-main">
+        <div class="info-item">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100010114870297">
+                <i style="--color: rgb(0, 0, 180)" class="icon fa-brands fa-facebook">
+                    <i style="--color: rgb(0, 0, 180)" class="fa-brands fa-facebook before"></i>
+                </i>
+            </a>
+        </div>
+        <div class="info-item">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100010114870297">
+                <i style="--color: orange" class="icon fa-brands fa-instagram">
+                    <i style="--color: orange" class="fa-brands fa-instagram before"></i>
+                </i>
+            </a>
+        </div>
+        <div class="info-item">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100010114870297">
+                <i style="--color: white" class="icon fa-brands fa-twitter">
+                    <i style="--color: blue" class="fa-brands fa-twitter before"></i>
+                </i>
+            </a>
+        </div>
+        <div class="info-item">
+            <a target="_blank">
+                <i style="--color: rgb(127, 244, 127)" class="icon fa-solid fa-mobile-screen-button">
+                    <i style="--color: rgb(127, 244, 127)" class="fa-solid fa-mobile-screen-button before"></i>
+                </i>
+
+                <div class="text">0123456789</div>
+            </a>
+        </div>
+        <div class="info-item">
+            <div class="info-main__info-item__background-i"></div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>27 Tran Phu Street, Ward 4, District 5, Ho Chi Minh City, VietNam</p>
+        </div>
+    </div>
+
+    <div class="blur"></div>
+    <div class="tabForgotPassword">
+        <div class="form">
+            <div class="text">Please enter your email to reset your password</div>
+            <div class="form-item">
+                <input type="text" placeholder=" ">
+                <div class="placeholder">Your Email</div>
+            </div>
+    
+            <div class="buttonLogin">Confirm</div>
+        </div>
+    </div>
+
+    <div class="getNewPassword">
+        <div class="form">
+            <div class="form-item">
+                <input type="text" placeholder=" ">
+                <div class="placeholder">New Password</div>
+            </div>
+
+            <div class="form-item">
+                <input type="text" placeholder=" ">
+                <div class="placeholder">Confirm Password</div>
+            </div>
+    
+            <div class="buttonLogin"><a href="">Submit</a></div>
+        </div>
+    </div>
+
+    <script src="./Login.js"></script>
+</body>
+</html>
